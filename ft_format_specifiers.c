@@ -21,7 +21,7 @@ int ft_format_specifiers(char fs, va_list args)
     else if (fs == '%')
 		  count = ft_putchar_fd('%', 1);
     else if (fs == 'p')
-		  count = ft_putadd_fd(va_arg(args, unsigned int), 1);
+		  count = ft_putadd_fd(va_arg(args, void *), 1);
     else
 		  count = -1;
     return (count);

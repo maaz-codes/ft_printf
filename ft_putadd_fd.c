@@ -1,26 +1,20 @@
+#include <stdio.h>
 #include <unistd.h>
 #include "ft_printf.h"
 
-int ft_putadd_fd(unsigned long n, int fd)
+int ft_putadd_fd(void *add, int fd)
 {
-    char num[10];
-    const char *hex;
-    int i;
+    int x;
     int count;
+    unsigned long address;
 
     count = 0;
-    i = 0;
-    hex = "0123456789ABCDEF";
-    if (n == 0)
-        count += ft_putchar_fd('0', fd);
-    while (n != 0)
-    {
-        num[i++] = hex[n % 16];
-        n = n / 16;
-    }
-    num[i] = 'x';
-    num [++i] = '0';
-    while (i >= 0)
-        count += ft_putchar_fd(num[i--], fd);
-    return (count + 2);
+    address = (unsigned long)add;
+    count = ft_putstr_fd("0x", fd);
+    if (count == -1)
+        return (-1);
+    x = ft_putnbr_hex_fd(address, fd, 0);
+    if (x == -1)
+        return (-1);
+    return (count + x);
 }
