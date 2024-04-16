@@ -1,7 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int ft_printf(const char *str, ...)
 {
@@ -25,29 +25,33 @@ int ft_printf(const char *str, ...)
 
 int main() 
 {
-	char *name = "Maaz";
+	char *name = NULL;
 	int count;
-	count = ft_printf("Hi %s\n", name);
-	printf("Count = %d \n", count);
-	count = ft_printf("%c\n", 'M');
-	printf("Count = %d \n", count);
-	count = ft_printf("%d\n", 45);
-	printf("Count = %d \n", count);
-	count = ft_printf("%i\n", 34);
-	printf("Count = %d \n", count);
-	count = ft_printf("%u\n", 20);
-	printf("Count = %d \n", count);
-	count = ft_printf("%x\n", 255);
-	printf("Count = %d \n", count);
-	count = ft_printf("%X\n", 255);
-	printf("Count = %d \n", count);
-	count = ft_printf("%d%%\n", 98);
-	printf("Count = %d \n", count);
-	count = ft_printf("%p\n", 200);
-	printf("Count = %d \n", count);
-	count = ft_printf("%o \n", 200);
+
+	count = ft_printf("%x\n", -1);
 	printf("Count = %d \n", count);
 }
+	// count = ft_printf("%X\n", 255);
+	// printf("Count = %d \n", count);
+	// count = ft_printf("%d%%\n", 98);
+	// printf("Count = %d \n", count);
+	// count = ft_printf("%p\n", 200);
+	// printf("Count = %d \n", count);
+	// count = ft_printf("%o \n", 200);
+	// printf("Count = %d \n", count);
+
+
+
+	// count = ft_printf("%c\n", 'M');
+	// printf("Count = %d \n", count);
+	// count = ft_printf("Hi %s\n", name);
+	// printf("Count = %d \n", count);
+	// count = ft_printf("%d\n", 45);
+	// printf("Count = %d \n", count);
+	// count = ft_printf("%i\n", 34);
+	// printf("Count = %d \n", count);
+	// count = ft_printf("%u\n", 20);
+	// printf("Count = %d \n", count);
 
 // %c Prints a single character.
 // •%s Prints a string (as defined by the common C convention).

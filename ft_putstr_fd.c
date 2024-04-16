@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int ft_putstr_fd(char *s, int fd)
 {
@@ -8,6 +8,8 @@ int ft_putstr_fd(char *s, int fd)
 
     i = 0;
 	count = i;
+    if (!s)
+        return (ft_putstr_fd("(null)", fd));
     while (s[i] != '\0')
     {
 		count += ft_putchar_fd(s[i], fd);
