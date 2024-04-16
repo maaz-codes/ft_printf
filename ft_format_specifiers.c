@@ -15,13 +15,13 @@ int ft_format_specifiers(char fs, va_list args)
     else if (fs == 'u')
 		  count = ft_putnbr_pos_fd(va_arg(args, unsigned int), 1);
     else if (fs == 'x')
-		  count = ft_putnbr_hex_fd((unsigned long)va_arg(args, int), 1, 0); 
+		  count = ft_putnbr_hex_fd(va_arg(args, unsigned int), 1, 0); 
     else if (fs == 'X')
-		  count = ft_putnbr_hex_fd(va_arg(args, int), 1, 1);
+		  count = ft_putnbr_hex_fd(va_arg(args, unsigned int), 1, 1);
     else if (fs == '%')
 		  count = ft_putchar_fd('%', 1);
     else if (fs == 'p')
-		  count = ft_putadd_fd(va_arg(args, int), 1);
+		  count = ft_putadd_fd(va_arg(args, unsigned int), 1);
     else
 		  count = -1;
     return (count);

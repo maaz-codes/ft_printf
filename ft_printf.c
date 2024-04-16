@@ -23,14 +23,14 @@ int ft_printf(const char *str, ...)
 	return (count);
 }
 
-int main() 
-{
-	char *name = NULL;
-	int count;
+// int main() 
+// {
+// 	char *name = NULL;
+// 	int count;
 
-	count = ft_printf("%x\n", -1);
-	printf("Count = %d \n", count);
-}
+// 	count = ft_printf("%x\n", -1);
+// 	printf("Count = %d \n", count);
+// }
 	// count = ft_printf("%X\n", 255);
 	// printf("Count = %d \n", count);
 	// count = ft_printf("%d%%\n", 98);
