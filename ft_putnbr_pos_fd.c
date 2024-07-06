@@ -6,7 +6,7 @@
 /*   By: maakhan <maakhan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/06 18:50:48 by maakhan           #+#    #+#             */
-/*   Updated: 2024/07/06 18:56:27 by maakhan          ###   ########.fr       */
+/*   Updated: 2024/07/06 19:06:56 by maakhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ int	ft_putnbr_pos_fd(unsigned long n, int fd)
 	char	num[10];
 	int		i;
 	int		count;
-	int		checker;
 
 	count = 0;
 	if (n < 0)

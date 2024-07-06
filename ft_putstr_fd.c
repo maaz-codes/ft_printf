@@ -6,12 +6,11 @@
 /*   By: maakhan <maakhan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/06 18:50:57 by maakhan           #+#    #+#             */
-/*   Updated: 2024/07/06 18:51:28 by maakhan          ###   ########.fr       */
+/*   Updated: 2024/07/06 19:06:07 by maakhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <unistd.h>
 
 static size_t	pft_strlen(char *str)
 {

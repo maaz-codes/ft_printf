@@ -6,11 +6,11 @@
 /*   By: maakhan <maakhan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/06 18:50:24 by maakhan           #+#    #+#             */
-/*   Updated: 2024/07/06 18:50:28 by maakhan          ###   ########.fr       */
+/*   Updated: 2024/07/06 19:05:10 by maakhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "ft_printf.h"
 
 int	ft_putchar_fd(char c, int fd)
 {

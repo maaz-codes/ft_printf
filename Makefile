@@ -14,7 +14,7 @@ $(NAME): $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
 
 %.o:%.c
-	$(CC) $(FLAGS) -c $< -o $@ 
+	$(CC) $(CFLAGS) -c $< -o $@ 
 
 clean:
 	rm -rf $(OBJS)

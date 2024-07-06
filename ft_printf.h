@@ -6,7 +6,7 @@
 /*   By: maakhan <maakhan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/06 18:49:33 by maakhan           #+#    #+#             */
-/*   Updated: 2024/07/06 18:49:49 by maakhan          ###   ########.fr       */
+/*   Updated: 2024/07/06 19:52:29 by maakhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include <stdio.h>
 # include <unistd.h>
 
 int	ft_printf(const char *str, ...);
