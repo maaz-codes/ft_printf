@@ -1,21 +1,31 @@
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: maakhan <maakhan@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/06 18:50:57 by maakhan           #+#    #+#             */
+/*   Updated: 2024/07/06 18:51:28 by maakhan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
+#include <unistd.h>
 
-int ft_putstr_fd(char *s, int fd)
+static size_t	pft_strlen(char *str)
 {
-    int i;
-	int count;
+	size_t	i;
 
-    i = 0;
-	count = i;
-    if (!s)
-        return (ft_putstr_fd("(null)", fd));
-    while (s[i] != '\0')
-    {
-		count += ft_putchar_fd(s[i], fd);
-        i++;
-    }
-	if (count != i)
-		return (-1);
-	return (count);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
+
+int	ft_putstr_fd(char *s, int fd)
+{
+	if (s == NULL)
+		return (ft_putstr_fd("(null)", fd));
+	return (write(fd, s, pft_strlen(s)));
 }
