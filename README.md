@@ -27,14 +27,6 @@ In this project, you will implement ft_printf, a function that behaves similarly
 
 ## Mandatory Part
 
-### Program Name
-
-libftprintf.a
-
-### Turn in Files
-
-Makefile, *.h, */*.h, *.c, */*.c
-
 ### External Functions
 
 malloc, free, write, va_start, va_arg, va_copy, va_end
