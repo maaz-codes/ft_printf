@@ -48,17 +48,18 @@ Create a library containing ft_printf(), which mimics printf() without implement
 - Make sure to include "libftprintf.h" in your source files where you intend to use ft_printf.
 - Compile your program with libftprintf.a linked using the provided Makefile commands
 
-#include "libftprintf.h"
-
+### Prototype
+```c
 int ft_printf(const char *format, ...);
-
+```
 ### Example
 
+```c
 #include "libftprintf.h"
 
-int main() {
+int main()
+{
     ft_printf("Hello, %s!\n", "world");
     return 0;
 }
-
-```c
+```
